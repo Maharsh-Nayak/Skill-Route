@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="../Pics/logo3-modified.jpg" alt="Logo"></div>
+        <div class="home">
+            <a href="index.html">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAATlJREFUSEvtlb0uBVEUhb8VOlEpPAAa0agkQoKEQi8anoD+vsKNmiegEQ8gEaEgEpVGIiEeQKESHVlmkjuTmbnzcwa3u6c8Z+31ndlZe44Y8NKA/QkG2J4EzgEDm5LeQi4XBLA9DtwBcz3TR2BR0kcTpBFgexS4BpYKZrfAqqSvOkgtwHZ8fgpsVZicAduS4raVribAIbDX0IYjSfutAbY7QLepx73zjqSDMm3pF9jeAY4DzRPZrqSTYk0fwPZalJALYKQl4DtK2oakq2xdDmB7HrgBxlqaJ/JPYFnSQ7KRAmxPAffAxC/Nk7L3aCAXJL3GG1nACzD9R/Ok/EnSbBHwDMz8E+BS0noOkDW2XTk4tVMr9YWmKqZDQNrJYYtyoVKLFMUPzErLmUizX/kvamkYJG98MoNcakQ/T6NkGSZCR0MAAAAASUVORK5CYII="/>
+            </a>
+        </div>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <form>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username"required>
+                <i class='bx bx-user' ></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="password"required>
+                <i class='bx bxs-lock' ></i>
+            </div>
+
+
+            <div class="remember-forgot">
+                <label ><input type="checkbox">Remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+
+
+           <button type="submit" class="btn" onclick="Login()">Login</button>
+
+           <div class="register-link">
+            <p>Dont have an account? <a href="#">Register</a></p>
+           </div>
+
+        </form>
+    </div>
+
+    <script>
+        function Login() {
+            window.location.href = 'index.html', '_blank';
+        }
+    </script>
+
+</body>
+</html>
