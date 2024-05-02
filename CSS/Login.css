@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,33 +14,30 @@
     inherits: false;
 }
 
-@keyframes rotateAnimation {
-    from {
+@keyframes rotateAnimation{
+    from{
         --rotate: 0deg;
-    }
-
-    to {
+    }to{
         --rotate: -360deg;
     }
 }
 
-body {
-    display: flex;
+body{
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background: #EFF1F3;
+    min-height: 100vh; */
+    background:#EFF1F3 ; 
     /* background-image: conic-gradient(
         from var(--rotate), var(--dark), var(--light) 60%
     ); */
-    background-image: url(../Pics/1.png);
-    /*background-blend-mode: difference;
+    /* background-image: url(Login4.jpg);
+    background-blend-mode: difference;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
 }
 
-/* 
 .main{
     display: flex;
     justify-content: space-between;
@@ -50,15 +47,15 @@ body {
 
 .main img{
     mix-blend-mode: multiply;
-    width: 35vw;
-} */
+    width: 50vw;
+}
 
-p {
+p{
     display: block;
 }
 
-header {
-    width: 100vw;
+header{
+    width: 100%;
     background-color: #2B3035;
     color: white;
     /* border: 3px solid bisque; */
@@ -68,78 +65,62 @@ header {
     padding: 0.8%;
 }
 
-hr {
+hr{
     height: 3px;
     background-color: #0B5ED7;
     width: 100%;
     border: 0px;
 }
 
-header .logo {
+header .logo{
     grid-area: l;
 }
 
-header .logo img {
+header .logo img{
     height: 5vh;
     margin: 0%;
     padding: 0;
-    mix-blend-mode: lighten;
+    mix-blend-mode:lighten;
 }
 
-header .home {
+header .home{
     grid-area: h;
     justify-self: end;
 }
 
-header .home a {
+header .home a{
     text-decoration: none;
     color: white;
-    font-size: larger;
+    font-size:larger;
 }
 
-header .home a:hover {
+header .home a:hover{
     text-decoration: underline;
 }
 
-.wrapper {
+.wrapper{
     padding: 20px;
-    width: 25vw;
-    /* background: white; */
-    background-color: rgba(244, 244, 244, 0.3);
-    /* box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px; */
+    width: 30vw;
+    background: white;
     border-radius: 30px;
     color: black;
-    align-self: center;
-    position: relative;
-    top: 20vh;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    /* align-self: center;
+    position: relative; 
+    top: 20vh; */
 }
-
-@-webkit-keyframes glow {
-    from {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #006be6, 0 0 40px #006be6, 0 0 50px #008ae6, 0 0 60px #3200e6, 0 0 70px #1b00e6;
-    }
-
-    to {
-        box-shadow: 0 0 20px #fff, 0 0 30px #4d53ff, 0 0 40px #4d5fff, 0 0 50px #4d4dff, 0 0 60px #4d53ff, 0 0 70px #4d5cff, 0 0 80px #4d4dff;
-    }
-}
-
-.wrapper h1 {
+.wrapper h1{
     font-size: 36px;
     text-align: center;
 }
 
-.wrapper .input-box {
+.wrapper .input-box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.input-box input {
+.input-box input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -149,99 +130,88 @@ header .home a:hover {
     border-radius: 90px;
     font-size: 16px;
     color: black;
-    padding: 20px 45px 20px 20px;
+    padding:20px 45px 20px 20px ;
 
 }
 
-.input-box input::placeholder {
+.input-box input::placeholder{
     color: rgb(13, 0, 0);
 }
 
-.input-box i {
+.input-box i{
     position: absolute;
     right: 20px;
-    top: 50%;
+    top:50%;
     transform: translateY(-50%);
     font-size: 20px;
 
 }
 
-.wrapper .remember-forgot {
+.wrapper .remember-forgot{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
     margin: -10px 11px 15px;
 }
-
-.remember-forgot label input {
+.remember-forgot label input{
     accent-color: rgb(18, 1, 1);
     margin-right: 3px;
 }
-
-.remember-forgot a {
+.remember-forgot a{
     color: rgb(23, 1, 1);
     text-decoration: none;
 }
-
-.remember-forgot a:hover {
+.remember-forgot a:hover{
     text-decoration: underline;
 }
-
-.wrapper .btn {
+.wrapper .btn{
     width: 100%;
     height: 45px;
     background: #0866FF;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
     cursor: pointer;
     font-size: 16px;
     color: #333;
     font-weight: 700;
 
 }
-
-.wrapper .btn:hover {
-    background: #1877F2;
+.wrapper .btn:hover{
+    background:#1877F2;
 }
-
-.wrapper .register-link {
+.wrapper .register-link{
     font-size: 14.5px;
     text-align: center;
     margin-top: 20px;
 }
-
-.register-link p a {
+.register-link p a{
     color: rgb(16, 0, 0);
     text-decoration: none;
     font-weight: 600;
 
 }
-
-.register-link p a:hover {
+.register-link p a:hover{
     text-decoration: underline;
 }
-
-.wrap {
+.wrap{
     width: 420px;
-    background: transparent;
+    background:transparent;
     color: black;
 }
 
-.wrap h1 {
+.wrap h1{
     font-size: 36px;
     text-align: center;
 }
-
-.wrap .in-box {
+.wrap .in-box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
-
-.in-box input {
+.in-box input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -251,38 +221,35 @@ header .home a:hover {
     border-radius: 90px;
     font-size: 16px;
     color: black;
-    padding: 20px 45px 20px 20px;
+    padding:20px 45px 20px 20px ;
 
 }
-
-.in-box input::placeholder {
+.in-box input::placeholder{
     color: rgb(13, 0, 0);
 }
-
-.in-box i {
+.in-box i{
     position: absolute;
     right: 20px;
-    top: 50%;
+    top:50%;
     transform: translateY(-50%);
     font-size: 20px;
 
 }
-
-.wrap .btn {
+.wrap .btn{
     width: 100%;
     height: 45px;
-    background: #89959B;
+    background:#89959B;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
     cursor: pointer;
     font-size: 16px;
     color: #333;
     font-weight: 600;
 
 }
-
-.wrap .btn:hover {
-    background: #EFF1F3;
+.wrap .btn:hover{
+    background:#EFF1F3;
 }
+
